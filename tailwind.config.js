@@ -9,12 +9,9 @@ export const borderRadii = {
 
 module.exports = {
     content: [
-      
+      './public/index.html',
     ],
-    plugins: [
-      require("./flyonui"),
-      require("./plugin") // Require only if you want to use FlyonUI JS component
-    ],
+   
     theme: {
       extend: {
         fontFamily: {

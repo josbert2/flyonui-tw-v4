@@ -23,7 +23,7 @@ class HSAccordion extends HSBasePlugin<IAccordionOptions> implements IAccordion 
 
   constructor(el: HTMLElement, options?: IAccordionOptions, events?: {}) {
     super(el, options, events)
-
+    console.log('elasdasd', el)
     this.toggle = this.el.querySelector('.accordion-toggle') || null
     this.content = this.el.querySelector('.accordion-content') || null
     this.group = this.el.closest('.accordion') || null

@@ -1,6 +1,6 @@
-const chokidar = require('chokidar')
-const pc = require('picocolors')
-const { exec } = require('child_process')
+import chokidar from 'chokidar'
+import pc from 'picocolors'
+import { exec } from 'child_process'
 
 // Function to execute your build command
 function build(functionName = 'executeCommands') {

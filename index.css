@@ -1,6 +1,9 @@
 @import "tailwindcss" prefix(tw);
 @config "./tailwind.config.js";
 
+/* css accordion */
+@source "./src/components/styled/";
+
 
 
 @theme {
@@ -298,6 +301,9 @@
   
 }
 
+.puita{
+  color: var(--tw-color-blue-500);
+}
 
 @utility title-h1 {
   font-size: 3.5rem;

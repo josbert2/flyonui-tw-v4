@@ -1,0 +1,15 @@
+@import "tailwindcss" prefix(tw);
+@utility title-h1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: '-0.01em';
+    font-weight: 500;
+  }
+  .tw\:text-title-h1{
+    @apply tw:title-h1;
+  }
+
+  body{
+    background-color: red
+  }
+  

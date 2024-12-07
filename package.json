@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "description": "The easiest, free and open-source Tailwind CSS component library with semantic classes.",
   "author": "ThemeSelection",
+  "type": "module",
   "license": "MIT",
   "homepage": "https://flyonui.com/",
   "repository": {
@@ -89,7 +90,8 @@
     "alpha": "npm run release -- --alpha && npm publish --tag=alpha",
     "build:css": "npx @tailwindcss/cli -i index.css -o output.css ",
     "watch:css": "npx @tailwindcss/cli -i index.css -o output.css --watch",
-    "watch:vite": "vite"
+    "watch:vite": "vite",
+    "watch:proveedor": "npx @tailwindcss/cli -i assets/sass/proveedor/index.scss -o dist/css/proveedor.css --watch"
   },
   "devDependencies": {
     "@types/dropzone": "^5.7.8",
@@ -108,6 +110,9 @@
     "terser-webpack-plugin": "^5.3.9",
     "ts-loader": "^9.4.2",
     "typescript": "^5.5.4",
+    "vite-plugin-full-reload": "^1.2.0",
+    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-symfony": "^7.0",
     "watch": "^1.0.2",
     "webpack": "^5.90.2",
     "webpack-cli": "^5.0.1"
@@ -115,9 +120,12 @@
   "dependencies": {
     "@popperjs/core": "^2.11.2",
     "@tailwindcss/cli": "^4.0.0-beta.5",
+    "@tailwindcss/vite": "^4.0.0-beta.5",
     "css-selector-tokenizer": "^0.8",
     "culori": "^4.0.1",
+    "ejs": "^3.1.10",
     "picocolors": "^1",
-    "postcss-js": "^4"
+    "postcss-js": "^4",
+    "vite-plugin-ejs": "^1.7.0"
   }
 }
